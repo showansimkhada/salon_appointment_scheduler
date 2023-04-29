@@ -3,7 +3,7 @@ PSQL="psql -X --username=freecodecamp --dbname=salon --tuples-only -c"
 
 # main menu
 MAIN_MENU() {
-  if [[ ! $! ]]
+  if [[ $1 ]]
   then
     echo -e "\n$1"
   fi
